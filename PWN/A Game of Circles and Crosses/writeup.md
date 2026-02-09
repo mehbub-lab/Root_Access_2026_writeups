@@ -56,11 +56,11 @@ human_moves = [
 ]
 Running this script retrieves the flag: 
 
-#Flag
+# Flag
 root{M@yb3_4he_r3@!_tr3@5ur3_w@$_th3_bug$_w3_m@d3_@l0ng_4h3_w@y}
 
 
-#Tools Used
+# Tools Used
 
 -- Code Analysis (Static Analysis): Reading bugs.py to understand the game logic and find the deterministic behavior. I identified the prioritized if-elif blocks the computer uses to decide its moves.
 -- Strategy Formulation: Developing a specific sequence of moves (a "fork") that exploits the computer's logic to guarantee a win.
