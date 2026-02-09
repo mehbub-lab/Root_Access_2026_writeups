@@ -1,6 +1,6 @@
 # Root Access 2026 Writeups
 
-**Total Challenges:** 23
+**Total Challenges:** 26
 This index provides direct redirect links to all challenge folders, organized by category.
 
 | Category | Challenge Name (Redirect) |
@@ -12,10 +12,13 @@ This index provides direct redirect links to all challenge folders, organized by
 | **Forensics** | [Eavesdropping](./Forensics/Eavesdropping/) |
 | **Forensics** | [Internal_Anatomy](./Forensics/Internal_Anatomy/) |
 | **Forensics** | [Redacted](./Forensics/Redacted/) |
+| **Miscellaneous** | [Dancing Men](./Miscellaneous/Dancing%20Men/) |
 | **Miscellaneous** | [Flashes](./Miscellaneous/Flashes/) |
 | **Miscellaneous** | [Manhattan_Stream](./Miscellaneous/Manhattan_Stream/) |
 | **OSINT** | [Golden State](./OSINT/Golden%20State/) |
+| **OSINT** | [Identity Crisis](./OSINT/Identity%20Crisis/) |
 | **OSINT** | [Sandbox](./OSINT/Sandbox/) |
+| **OSINT** | [The_Lithic_Log](./OSINT/The_Lithic_Log/) |
 | **OSINT** | [Vigenere_Bagutte](./OSINT/Vigenere_Bagutte/) |
 | **OSINT** | [Wolof Firewall](./OSINT/Wolof%20Firewall/) |
 | **PWN** | [A Game of Circles and Crosses](./PWN/A%20Game%20of%20Circles%20and%20Crosses/) |
