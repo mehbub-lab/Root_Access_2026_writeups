@@ -1,5 +1,5 @@
 # Challenge Name  
-Golden State
+ Golden State
 
 ---
 
@@ -10,9 +10,9 @@ Golden State
 -opposide of the the Dhaba along the river was the destination
 -Got the flag by clicking on the co ordinates
 
-##Flag
+## Flag
 root{4m4r_50n4r_64ngl4}
 
-##Tools used
+## Tools used
 -Google Lens
 -Google Maps Street View
