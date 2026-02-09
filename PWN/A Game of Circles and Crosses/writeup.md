@@ -14,8 +14,8 @@ Winning Moves:
 -- 2, 2 (Bottom Right)
 -- 2, 0 (Top Right) -> Critical Move: This sets up two wins: vertical column 3 and diagonal.
 -- 2, 1 (Right Middle) -> Win.
-
-
+----
+## Methodology Used
 1. Analyze the Code (bugs.py)
    Observation: The computer's logic is deterministic. It evaluates the board and blocks the first immediate threat it finds in a fixed priority order (lines 332-386).
    Vulnerability: It does not look ahead more than one move. If you create two simultaneous threats (a "fork"), it will block the first one it checks based on its hardcoded if-elif chain, leaving the second one open for you to win.
