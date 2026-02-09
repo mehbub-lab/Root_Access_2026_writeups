@@ -9,9 +9,9 @@ Flashes
 -- Saw the letters were blinking in yellow, in colors
 -- Collecting each one startig from 'r'
 
-#Flag
+# Flag
 
 root{D!ff2c} 
 
-#Tools used
-VLC Media Player 
+# Tools used
+- VLC Media Player 
