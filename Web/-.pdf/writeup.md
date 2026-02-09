@@ -1,4 +1,4 @@
-#Approach
+# Approach
 -- Inspect HTML Source: View the source code of the main page. You'll find a hidden comment pointing to a GitHub repository: https://github.com/Asif-Tanvir-2006/rootaccess_web_chal_pdf.
 -- Check Commit History: The README hints at ignoring "history," which is a clue to check the git commit history.
 -- Decode Secret Message: In the commits, there's a suspicious Base64 message.
@@ -9,7 +9,7 @@
 
 
 
-#Steps to Solution
+# Steps to Solution
 
 1. Exploration
 Visited the challenge website: https://rootaccess-web-chal-pdf.vercel.app/
@@ -42,5 +42,10 @@ Found the flag at the end of the file strings: root{easy_if_u_follow}
 
 
 
-#Flag
+# Flag
 root{easy_if_u_follow}
+
+# Tools Used
+- ROT13 Decoder
+- Base64 Decoder
+- Text Editor
