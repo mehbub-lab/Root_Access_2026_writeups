@@ -8,7 +8,7 @@ Dro pvkq sc ss3cd5_vslbkbi
 
 
 
-#Step 1: Initial Analysis
+# Step 1: Initial Analysis
 
 Input provided: a short encrypted string.
 
@@ -16,7 +16,7 @@ Hint references an IP address: 10.11.1.6.
 
 The phrase “Sum all the essence within” suggests summing the digits of the IP.
 
-#Calculate:
+# Calculate:
 
 1 + 0 + 1 + 1 + 1 + 6 = 10
 
@@ -24,7 +24,7 @@ This strongly indicates a Caesar cipher with shift = 10.
 
 No files were provided, so no file or strings checks were needed.
 
-#Step 2: Core Technique
+# Step 2: Core Technique
 
 Technique used: Caesar Cipher Decryption
 
@@ -39,7 +39,7 @@ Ciphertext format matches classic Caesar output.
 Key observation:
 The IP address directly gives the shift after summing its digits.
 
-#Step 3: Implementation
+# Step 3: Implementation
 
 Used standard Linux tools to decrypt with a rotation of 10.
 
@@ -52,14 +52,14 @@ tr rotates letters backward by 10.
 
 Numbers and underscores remain unchanged.
 
-#Output:
+# Output:
 
 The flag is ii3st5_library
 Alternative (optional) – CyberChef / online Caesar decoder
 
 Set rotation to 10.
 
-#Step 4: Extraction
+# Step 4: Extraction
 
 Decrypted message:
 
@@ -68,12 +68,12 @@ The flag is ii3st5_library
 Placed into required format:
 
 
-#Flag
+# Flag
 
 root{ii3st5_library}
 
 
-#Tools Used
+# Tools Used
 
 -echo – Provide ciphertext input
 -tr – Perform Caesar rotation in terminal
