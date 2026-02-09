@@ -1,5 +1,5 @@
 # Meme Madness
-Approach
+## Approach
 1. Artifact Analysis
 
 Krish_ka_gana_sunega.webm
@@ -24,12 +24,10 @@ nahi.jpeg
 Key: Krish42 (repeating).
 3. Decryption
  
-#Check Screenshot for script
+# Check Screenshot for script
+-------
 
-
-
-
-Step-by-Step Methodology
+# Step-by-Step Methodology
 1. Identify the Key in the Webm File
 We examine 
 
@@ -81,11 +79,11 @@ We have three components of length 38 (or repeating key):
 Ciphertext: 38 bytes from 
 
 challenge_video.mp4
-.
+
 Pad/Salt: 38 bytes from 
 
 nahi.jpeg
-.
+
 Key: Krish42 (7 bytes).
 The decryption logic is a simple XOR sum of all three components: Flag = Ciphertext XOR Pad XOR Key
 
@@ -93,16 +91,18 @@ Python Script:
 
 python
 import itertools
-# 1. Copied manually from 'tail -c 38 challenge_video.mp4 | xxd'
+ 1. Copied manually from 'tail -c 38 challenge_video.mp4 | xxd'
 cipher = bytes.fromhex('81c9b3fbcc5ab965f529b4d7035288780a6b94487eeaaa46a33b16173524238aac6b216c7f4d')
-# 2. Copied manually from 'xxd -s 26274 -l 38 nahi.jpeg'
-# (Found by searching for the "pieces" strings in hex editor)
+
+ 2. Copied manually from 'xxd -s 26274 -l 38 nahi.jpeg'
+    (Found by searching for the "pieces" strings in hex editor)
 pad = bytes.fromhex('b8d4b5fcdf0de35bf334a6d2560caf6f3c6b8c1528c4a170b9207d53173423979b3772556959')
-# 3. Found in webm file
+ 
+ 3. Found in webm file
 key = b'Krish42' 
-# Repeat key to match length
+ Repeat key to match length
 key_repeated = (key * 10)[:38]
-# XOR Decryption
+ XOR Decryption
 flag = []
 for c, p, k in zip(cipher, pad, key_repeated):
     flag.append(c ^ p ^ k)
@@ -110,12 +110,12 @@ print(bytes(flag).decode())
 
 
 
-#FLAG
+# FLAG
 
 root{chuttamalle_spidey_is_vibin_hard}
 
 
-#Tools Used:
+# Tools Used:
 
 strings: Used to extract readable text (KEY=Krish42 and pieces IMy...) from binary files.
 grep: Used to filter the output of strings.
