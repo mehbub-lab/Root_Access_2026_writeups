@@ -1,6 +1,6 @@
 # Root Access 2026 Writeups
 
-**Total Challenges:** 26
+**Total Challenges:** 27
 This index provides direct redirect links to all challenge folders, organized by category.
 
 | Category | Challenge Name (Redirect) |
@@ -31,3 +31,4 @@ This index provides direct redirect links to all challenge folders, organized by
 | **Steganography** | [Meme Madness](./Steganography/Meme%20Madness/) |
 | **Web** | [-.pdf](./Web/-.pdf/) |
 | **Web** | [Source Inspector](./Web/Source%20Inspector/) |
+| **Web** | [The McCallister Security Audit](./Web/The%20McCallister%20Security%20Audit/) |
