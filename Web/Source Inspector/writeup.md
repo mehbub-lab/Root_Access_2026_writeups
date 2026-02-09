@@ -11,8 +11,8 @@ Bypass PHP filter
 
 
 Goal: Retrieve the flag from flag.php. Target: https://daemon.lovestoblog.com/ (also available on deity and evil subdomains). Vulnerability: Local File Inclusion (LFI) via the ?page= parameter.
-
-#Methodology
+----
+# Methodology
 
 1. Reconnaissance
 We started by exploring the application's behavior.
@@ -64,10 +64,10 @@ $flag = "root{php_wrappers_r3v3al_s3cr3ts}";
 ?>
 
 
-#Flag
+# Flag
 root{php_wrappers_r3v3al_s3cr3ts}
 
-#Tools Used
+# Tools Used
 
 -- Web Browser: This was the primary tool. Due to the site's anti-bot protection (an AES/JavaScript challenge page typical of InfinityFree hosting), standard command-line tools like curl or Python scripts failed to connect reliably. A real browser (or a browser automation tool) was necessary to execute the JavaScript and pass the challenge.
 -- Developer Tools (Console): Used to execute JavaScript (e.g., to retrieve cookies or view page source) when the standard interface (right-click -> view source) might be blocked or cumbersome.
